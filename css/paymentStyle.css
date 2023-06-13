@@ -25,15 +25,170 @@
 }
 
 .RightContainer {
-    min-width:600px;
-    display:flex;
-    flex-direction:column;
+    min-width:800px;
     padding: 17px 20px;
+}
+.RightContainer h1{
+    border-bottom:2px solid #000;
 }
 
 .containerWrapper .leftSideContainer .logoHeader{
     border-bottom: 1px solid #f1f1f1;
 }
+.containerWrapper .leftSideContainer .logoHeader img{
+    margin-bottom:10px;
+}
+.progressbar{
+    text-align:center;
+    padding:12px 20px;
+    border-bottom:2px solid #f1f1f1;
+}
+.formWrapper{
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+    height: 500px;
+    overflow-y:scroll;
+
+}
+.RightContainer .formWrapper .checkoutBtns{
+    display: flex;
+    justify-content:end;
+    border-top:1px solid #c7c7c7;
+    padding:3px 9px;
+    gap:15px;
+}
+.RightContainer .formWrapper .checkoutBtns div{
+    border:2px solid blue;
+    background-color: blue;
+    color:white;
+    padding:3px 10px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.RightContainer .formWrapper .TermC{
+    margin-bottom:10px;
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.mycard {
+    border:1px solid #c7c7c7;
+    border-radius:4px;
+    padding:10px 12px;
+    box-shadow: 0px 1px 3px 2px rgba(0,0,0,.1);
+    
+}
+
+.cardHeader {
+    font-size:23px;
+    font-weight:600;
+    border-bottom:1px solid #f1f1f1;
+    margin-bottom:10px;
+}
+
+.cardBody {
+    
+}
+
+.planSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price1,.price2,.totalAmount {
+    display:flex;
+    justify-content:space-between;
+    padding:4px 4px;
+}
+.firstRow {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    /*     width:91%; */
+    gap:10px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+}
+.firstRow input, .secondRow input,.secondRow textarea,.ThirdRow input{
+   padding:2px 10px;
+   outline:none;
+   border:2px solid #c7c7c7;
+}
+.firstRow input:focus, .secondRow input:focus,.secondRow textarea:focus,.ThirdRow input:focus{
+   border:2px solid  #30419F;
+ }
+.firstRow label{
+    flex: 1 0 75px;
+    line-height: 3px;
+    height: 0px;
+}
+
+.secondRow {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    /*     width:91%; */
+    gap:10px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+}
+
+.secondRow label{
+    flex: 0 0 108px;
+    white-space: nowrap;
+    line-height: 3px;
+    height: 0px;
+}
+.secondRow input{
+    width: 35%;
+}
+.secondRow label:last-of-type{
+    flex: 0 0 159px;
+    white-space: nowrap;
+}
+.secondRow textarea{
+    flex: 1;
+    white-space: nowrap;
+}
+.secondRow input:nth-last-of-type(1){
+    width: 35%;
+}
+
+.ThirdRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ThirdRow input {
+     flex: 1 0 89px;
+}
+
+.plansList{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+
+}
+
+.plansList li{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 18px;
+}
+
+.plansList li i{
+    color:#00FF00;
+    font-size:20px;
+}
+
 
 @media screen and  (min-width:768px){
     .containerWrapper {
@@ -42,7 +197,7 @@
         padding: 10px 13px;
         border: 2px solid #c5c5c5;
         border-radius: 10px;
-        height: 655px;
+        height: 613px;
         margin:20px;
         justify-content:center;
         box-shadow: 1px 2px 42px 12px rgba(0,0,0,.1);
